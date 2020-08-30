@@ -46,7 +46,7 @@ class IpAddress {
 getFirstIpAddress(cidrStr, callback) {
 
   // Initialize return arguments for callback
-  let firstIpAddress = null;
+  let firstIpAddress = { ipv4 : null, ipv6 : null };
   let callbackError = null;
  
 
