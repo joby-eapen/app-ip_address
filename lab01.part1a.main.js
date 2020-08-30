@@ -117,9 +117,9 @@ function main() {
       // Now we are inside the callback function.
       // Display the results on the console.
       if (error) {
-        console.error(`  Error returned from GET request: {"ipv4:" "${error}", "ipv6:" "${error}"}`);
+        console.error(`  Error returned from GET request: ${error}`);
       }
-      console.log(`  Response returned from GET request: {"ipv4:" "${IPV4data}", "ipv6:" "${IPV6data}"}`);
+      console.log(`  Response returned from GET request: ${IPV4data} ${IPV6data}`);
     });
   }
   // Iterate over sampleIpv4s and pass the element's value to getIpv4MappedIpv6Address().
